@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPI UIN Bukittinggi - Satuan Pengawas Internal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #edeff2;
+            --secondary-color: #2a5298;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .header-bg {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .card {
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        
+        .footer-bg {
+            background: linear-gradient(135deg, #222, #444);
+        }
+        
+        .nav-link.active {
+            font-weight: bold;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .header-title h1 {
+                font-size: 1.5rem;
+            }
+            .header-title h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-bg text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                    <img src="images/logo uin.png" alt="Logo UIN" class="img-fluid" style="height: 80px;">
+                </div>
+                <div class="col-md-8 text-center header-title">
+                    <h1 class="mb-1"> Satuan Pengawasan Internal</h1>
+                    <h2 class="mb-0">UIN Sjech M. Djamil Djambek Bukittinggi</h2>
+                </div>
+                <div class="col-md-2 text-center">
+                    <img src="images/logo spi.png" alt="Logo SPI" class="img-fluid" style="height: 80px;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="bi bi-house-door"></i> Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-badge"></i> Profil 
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#tugas-fungsi">Tugas dan Fungsi</a></li>
+                            <li><a class="dropdown-item" href="#struktur">Struktur Organisasi</a></li>
+                            <li><a class="dropdown-item" href="#visi-misi">Visi dan Misi</a></li>
+                            <li><a class="dropdown-item" href="#anggota">Anggota</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dokumen"><i class="bi bi-file-earmark-text"></i> Dokumen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#standar"><i class="bi bi-award"></i> Standar Mutu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#berita"><i class="bi bi-newspaper"></i> Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeri"><i class="bi bi-images"></i> Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak"><i class="bi bi-envelope"></i> Kontak</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Cari..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Hero Section -->
+        <section class="hero mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-5 fw-bold"> Selamat datang di Web Satuan Pengawas Internal</h1>
+                    <p class="lead">Investigate with Professionalism, Objectivity, and Integrity.
+                        Bersama Membangun Tata Kelola yang Baik Mengawal Transparansi, Menjaga Akuntabilitas
+                    </p>
+                    <a href="#visi-misi" class="btn btn-primary btn-lg">Selengkapnya</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/gedung.jpg" alt="Gedung UIN Bukittinggi" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- Profil Section -->
+        <section id="profil" class="mb-5">
+            <div class="row">
+                <!-- Tugas dan Fungsi -->
+                <div id="tugas-fungsi" class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h3><i class="bi bi-list-task"></i> Tugas dan Fungsi</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Satuan Pengawas Internal (SPI) UIN Bukittinggi mempunyai tugas melaksanakan pengawasan fungsional terhadap pelaksanaan tugas di lingkungan UIN Bukittinggi.</p>
+                            <p>Fungsi SPI meliputi pengawas, evaluasi, dan pemantauan terhadap pelaksanaan standar mutu di seluruh unit kerja.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Struktur Organisasi -->
+                <div id="struktur" class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-success text-white">
+                            <h3><i class="bi bi-diagram-3"></i> Struktur Organisasi</h3>
+                        </div>
+                        <div class="card-body">
+                            <img src="images/struktur-organisasi.jpg" alt="Struktur Organisasi SPI" class="img-fluid mb-3">
+                            <p>SPI UIN Bukittinggi dipimpin oleh seorang Kepala yang bertanggung jawab langsung kepada Rektor.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visi dan Misi -->
+                <div id="visi-misi" class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-info text-white">
+                            <h3><i class="bi bi-bullseye"></i> Visi dan Misi</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5>Visi:</h5>
+                            <p>"Menjadi Satuan Pengawasan Internal yang Profesional, Independen, Objectif dan memberi kontribusi untuk mencapai visi - misi UIN Sjech M. Djamil Djambek Bukittinggi."</p>
+                            <h5>Misi:</h5>
+                            <p>
+                             "Melaksanakan pengawasan internal di bidang keuangan dan kinerja lainnya, 
+                             menjadi mitra bagi manajemen institusi dalam memberikan nilai tambah pada
+                             proses penyelenggaraan UIN Sjech M Djamil Djambek Bukittinggi.""
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        
+        .header-spi {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            border-bottom: 5px solid #3498db;
+        }
+        
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .ketua-card {
+            border-top: 4px solid #3498db;
+        }
+        
+        .sekretaris-card {
+            border-top: 4px solid #2ecc71;
+        }
+        
+        .anggota-card {
+            border-top: 4px solid #f1c40f;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .section-title:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mb-5">
+        <!-- Ketua dan Sekretaris -->
+        <section id="pimpinan" class="mb-5">
+            <h2 class="text-center section-title"><i class="bi bi-person-badge"></i> Pimpinan SPI</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Ketua SPI -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center ketua-card">
+                        <img src="images/ketua-spi.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Ketua SPI" style="width: 150px; height: 150px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Zuwardi, S.E.I, M.A</h5>
+                            <p class="card-text text-muted"><i class="bi bi-award-fill"></i> Ketua SPI</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="bi bi-envelope"></i></a>
+                                <a href="#" class="btn btn-outline-info btn-sm"><i class="bi bi-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sekretaris SPI -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center sekretaris-card">
+                        <img src="images/sekretaris-spi.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Sekretaris SPI" style="width: 150px; height: 150px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Ilham Illahi, S.E., M.Si</h5>
+                            <p class="card-text text-muted"><i class="bi bi-file-earmark-text-fill"></i> Sekretaris</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="bi bi-envelope"></i></a>
+                                <a href="#" class="btn btn-outline-info btn-sm"><i class="bi bi-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Anggota SPI -->
+        <section id="anggota" class="anggota mb-5">
+            <h2 class="text-center section-title"><i class="bi bi-people-fill"></i> Anggota SPI</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Anggota 1 -->
+                <div class="col">
+                    <div class="card h-100 text-center anggota-card">
+                        <img src="images/anggota1 - spi.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Anggota SPI 1" style="width: 150px; height: 150px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Febriyan Pratama Defaz, S.E., M.M</h5>
+                            <p class="card-text text-muted"><i class="bi bi-person-fill"></i> Anggota</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="bi bi-envelope"></i></a>
+                                <a href="#" class="btn btn-outline-info btn-sm"><i class="bi bi-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Anggota 2 -->
+                <div class="col">
+                    <div class="card h-100 text-center anggota-card">
+                        <img src="images/anggota2-spi.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Anggota SPI 2" style="width: 150px; height: 150px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Himmatul Khairi, S.E., M.M</h5>
+                            <p class="card-text text-muted"><i class="bi bi-person-fill"></i> Anggota</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="bi bi-envelope"></i></a>
+                                <a href="#" class="btn btn-outline-info btn-sm"><i class="bi bi-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Anggota 3 -->
+                <div class="col">
+                    <div class="card h-100 text-center anggota-card">
+                        <img src="images/anggota3-spi.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Anggota SPI 3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Fathur Rahmi, M.Pd</h5>
+                            <p class="card-text text-muted"><i class="bi bi-person-fill"></i> Anggota</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="bi bi-envelope"></i></a>
+                                <a href="#" class="btn btn-outline-info btn-sm"><i class="bi bi-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <!-- Berita Terkini -->
+        <section id="berita" class="berita mb-5">
+            <h2 class="text-center mb-4 border-bottom pb-2"><i class="bi bi-newspaper"></i> Berita Terkini</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/berita1.jpg" class="card-img-top" alt="Pelatihan SPI">
+                        <div class="card-body">
+                            <h5 class="card-title">Pelatihan  Satuan Pengawas Internal 2023</h5>
+                            <p class="card-text">Pelatihan dilaksanakan untuk seluruh unit kerja di lingkungan UIN Bukittinggi dalam rangka peningkatan mutu berkelanjutan.</p>
+                            <a href="#berita1" class="btn btn-primary">Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <small>Diposting 3 hari yang lalu</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/berita2.jpg" class="card-img-top" alt="Audit Mutu">
+                        <div class="card-body">
+                            <h5 class="card-title">Audit Mutu Internal Fakultas Tarbiyah</h5>
+                            <p class="card-text">Tim SPI melaksanakan audit mutu internal di Fakultas Tarbiyah sebagai bagian dari evaluasi tahunan.</p>
+                            <a href="#berita2" class="btn btn-primary">Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <small>Diposting 1 minggu yang lalu</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/berita3.jpg" class="card-img-top" alt="Workshop Mutu">
+                        <div class="card-body">
+                            <h5 class="card-title">Workshop Penyusunan Standar Mutu</h5>
+                            <p class="card-text">SPI menyelenggarakan workshop untuk menyusun standar mutu terbaru yang akan diterapkan tahun depan.</p>
+                            <a href="#berita3" class="btn btn-primary">Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <small>Diposting 2 minggu yang lalu</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Berita Detail Modals -->
+        <div class="modal fade" id="berita1Modal" tabindex="-1" aria-labelledby="berita1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="berita1ModalLabel">Pelatihan  Satuan Pengawasan Internal 2023</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/berita1.jpg" class="img-fluid mb-3" alt="Pelatihan SPI">
+                        <p>Pelatihan  Satuan Pengawas Internal tahun 2023 telah dilaksanakan pada tanggal 15-17 November 2023 di Aula Rektorat UIN Bukittinggi. Kegiatan ini diikuti oleh seluruh unit kerja di lingkungan UIN Bukittinggi dalam rangka peningkatan mutu berkelanjutan.</p>
+                        <p>Pelatihan dibuka oleh Rektor UIN Bukittinggi, Prof. Dr. H. Martin Kustati, M.Pd. Dalam sambutannya, Rektor menekankan pentingnya peran SPI dalam menjaga kualitas pendidikan tinggi di UIN Bukittinggi.</p>
+                        <p>Materi pelatihan meliputi:</p>
+                        <ul>
+                            <li>Pemahaman standar mutu pendidikan tinggi</li>
+                            <li>Teknik audit mutu internal</li>
+                            <li>Penyusunan laporan pengawasan</li>
+                            <li>Sistem penjaminan mutu internal</li>
+                        </ul>
+                        <p>Kegiatan ini diharapkan dapat meningkatkan kapasitas dan kompetensi pengawas internal di seluruh unit kerja dalam melaksanakan tugas pengawasan mutu.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="berita2Modal" tabindex="-1" aria-labelledby="berita2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="berita2ModalLabel">Audit Mutu Internal Fakultas Tarbiyah</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/berita2.jpg" class="img-fluid mb-3" alt="Audit Mutu">
+                        <p>Tim SPI UIN Bukittinggi telah melaksanakan audit mutu internal di Fakultas Tarbiyah pada tanggal 5-7 November 2023. Audit ini merupakan bagian dari evaluasi tahunan yang rutin dilaksanakan SPI untuk memastikan penerapan standar mutu di seluruh fakultas.</p>
+                        <p>Audit dipimpin oleh Kepala SPI, Dr. H. Ahmad Fauzi, M.Ag., dengan melibatkan 5 orang auditor internal. Objek audit meliputi seluruh program studi di lingkungan Fakultas Tarbiyah dengan fokus pada:</p>
+                        <ul>
+                            <li>Kurikulum dan pembelajaran</li>
+                            <li>Kualitas dosen dan tenaga kependidikan</li>
+                            <li>Prasarana dan sarana pendidikan</li>
+                            <li>Pengelolaan penelitian dan pengabdian</li>
+                        </ul>
+                        <p>Dekan Fakultas Tarbiyah, Dr. Hj. Rina Febriana, M.Pd., menyambut baik pelaksanaan audit ini dan berkomitmen untuk terus meningkatkan mutu pendidikan di fakultas yang dipimpinnya.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="berita3Modal" tabindex="-1" aria-labelledby="berita3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="berita3ModalLabel">Workshop Penyusunan Standar Mutu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/berita3.jpg" class="img-fluid mb-3" alt="Workshop Mutu">
+                        <p>SPI UIN Bukittinggi menyelenggarakan Workshop Penyusunan Standar Mutu pada tanggal 25-27 Oktober 2023 di Hotel Pusako Bukittinggi. Workshop ini bertujuan untuk menyusun standar mutu terbaru yang akan diterapkan mulai tahun 2024.</p>
+                        <p>Kegiatan diikuti oleh perwakilan dari seluruh fakultas dan unit kerja di lingkungan UIN Bukittinggi. Hadir sebagai narasumber, Prof. Dr. H. Abdul Mujib, M.Ag. dari Kementerian Agama RI yang memberikan materi tentang pengembangan standar mutu pendidikan tinggi.</p>
+                        <p>Workshop menghasilkan draft standar mutu baru yang mencakup:</p>
+                        <ul>
+                            <li>Standar mutu akademik</li>
+                            <li>Standar mutu penelitian</li>
+                            <li>Standar mutu pengabdian masyarakat</li>
+                            <li>Standar mutu tata kelola</li>
+                        </ul>
+                        <p>Draft standar mutu ini akan melalui proses finalisasi sebelum disahkan oleh Rektor dan diterapkan di seluruh lingkungan UIN Bukittinggi.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dokumen dan Standar -->
+        <section class="dokumen-standar mb-5">
+            <div class="row">
+                <div id="dokumen" class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h3><i class="bi bi-file-earmark-text"></i> Dokumen Terbaru</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" data-bs-toggle="modal" data-bs-target="#dokumen1Modal">
+                                    Pedoman Mutu 2023
+                                    <span class="badge bg-primary rounded-pill">PDF</span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" data-bs-toggle="modal" data-bs-target="#dokumen2Modal">
+                                    Standar Mutu Akademik
+                                    <span class="badge bg-primary rounded-pill">PDF</span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" data-bs-toggle="modal" data-bs-target="#dokumen3Modal">
+                                    Formulir Audit Mutu
+                                    <span class="badge bg-success rounded-pill">DOCX</span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" data-bs-toggle="modal" data-bs-target="#dokumen4Modal">
+                                    Laporan Tahunan 2022
+                                    <span class="badge bg-primary rounded-pill">PDF</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="standar" class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-success text-white">
+                            <h3><i class="bi bi-award"></i> Standar Mutu</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#standar1Modal">
+                                    Standar 1: Tata Pamong
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#standar2Modal">
+                                    Standar 2: Mahasiswa
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#standar3Modal">
+                                    Standar 3: Sumber Daya Manusia
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#standar4Modal">
+                                    Standar 4: Keuangan, Sarana dan Prasarana
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dokumen Modals -->
+        <div class="modal fade" id="dokumen1Modal" tabindex="-1" aria-labelledby="dokumen1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="dokumen1ModalLabel">Pedoman Mutu 2023</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://drive.google.com/file/d/example/preview" allowfullscreen></iframe>
+                        </div>
+                        <p>Dokumen Pedoman Mutu 2023 ini berisi panduan lengkap tentang sistem penjaminan mutu internal di UIN Bukittinggi. Pedoman ini mencakup:</p>
+                        <ul>
+                            <li>Kebijakan mutu UIN Bukittinggi</li>
+                            <li>Struktur organisasi penjaminan mutu</li>
+                            <li>Mekanisme pengawasan internal</li>
+                            <li>Prosedur audit mutu</li>
+                            <li>Format-format standar dokumen mutu</li>
+                        </ul>
+                        <p>Dokumen ini wajib dijadikan acuan oleh seluruh unit kerja di lingkungan UIN Bukittinggi dalam melaksanakan penjaminan mutu.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="#" class="btn btn-primary">Unduh Dokumen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="dokumen2Modal" tabindex="-1" aria-labelledby="dokumen2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="dokumen2ModalLabel">Standar Mutu Akademik</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://drive.google.com/file/d/example/preview" allowfullscreen></iframe>
+                        </div>
+                        <p>Dokumen Standar Mutu Akademik ini berisi standar-standar yang harus dipenuhi dalam penyelenggaraan pendidikan akademik di UIN Bukittinggi, meliputi:</p>
+                        <ul>
+                            <li>Standar kompetensi lulusan</li>
+                            <li>Standar isi pembelajaran</li>
+                            <li>Standar proses pembelajaran</li>
+                            <li>Standar penilaian pembelajaran</li>
+                            <li>Standar pengelolaan program studi</li>
+                        </ul>
+                        <p>Dokumen ini menjadi acuan utama dalam pengembangan kurikulum dan pelaksanaan tridharma perguruan tinggi di lingkungan UIN Bukittinggi.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="#" class="btn btn-primary">Unduh Dokumen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="dokumen3Modal" tabindex="-1" aria-labelledby="dokumen3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="dokumen3ModalLabel">Formulir Audit Mutu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://drive.google.com/file/d/example/preview" allowfullscreen></iframe>
+                        </div>
+                        <p>Formulir Audit Mutu ini digunakan oleh auditor internal dalam melaksanakan audit mutu di unit-unit kerja UIN Bukittinggi. Formulir ini terdiri dari:</p>
+                        <ul>
+                            <li>Formulir persiapan audit</li>
+                            <li>Formulir pelaksanaan audit</li>
+                            <li>Formulir temuan audit</li>
+                            <li>Formulir rekomendasi perbaikan</li>
+                            <li>Formulir tindak lanjut audit</li>
+                        </ul>
+                        <p>Formulir ini wajib digunakan oleh seluruh auditor internal dalam melaksanakan tugas pengawasan mutu.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="#" class="btn btn-primary">Unduh Dokumen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="dokumen4Modal" tabindex="-1" aria-labelledby="dokumen4ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="dokumen4ModalLabel">Laporan Tahunan 2022</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://drive.google.com/file/d/example/preview" allowfullscreen></iframe>
+                        </div>
+                        <p>Laporan Tahunan SPI UIN Bukittinggi Tahun 2022 ini memuat seluruh kegiatan pengawasan internal yang telah dilaksanakan selama tahun 2022, meliputi:</p>
+                        <ul>
+                            <li>Program kerja tahunan SPI</li>
+                            <li>Pelaksanaan audit mutu internal</li>
+                            <li>Temuan-temuan pengawasan</li>
+                            <li>Rekomendasi perbaikan</li>
+                            <li>Evaluasi kinerja SPI</li>
+                        </ul>
+                        <p>Laporan ini telah disampaikan kepada Rektor dan digunakan sebagai bahan evaluasi untuk penyusunan program kerja tahun berikutnya.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <a href="#" class="btn btn-primary">Unduh Dokumen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Standar Modals -->
+        <div class="modal fade" id="standar1Modal" tabindex="-1" aria-labelledby="standar1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="standar1ModalLabel">Standar 1: Tata Pamong</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Kriteria Standar Tata Pamong:</h5>
+                        <ol>
+                            <li>Sistem tata pamong yang efektif dan akuntabel</li>
+                            <li>Kepemimpinan yang visioner dan transformatif</li>
+                            <li>Sistem pengambilan keputusan yang partisipatif</li>
+                            <li>Pengelolaan risiko yang terstruktur</li>
+                            <li>Keterbukaan informasi dan transparansi</li>
+                        </ol>
+                        <h5>Indikator Kinerja:</h5>
+                        <ul>
+                            <li>Ketersediaan dokumen tata pamong</li>
+                            <li>Keterlibatan stakeholders dalam pengambilan keputusan</li>
+                            <li>Implementasi sistem pengendalian internal</li>
+                            <li>Ketersediaan informasi publik</li>
+                        </ul>
+                        <h5>Instrumen Pengukuran:</h5>
+                        <p>Audit tata pamong, survei kepuasan stakeholders, dokumen kebijakan, laporan tahunan.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="standar2Modal" tabindex="-1" aria-labelledby="standar2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="standar2ModalLabel">Standar 2: Mahasiswa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Kriteria Standar Mahasiswa:</h5>
+                        <ol>
+                            <li>Sistem seleksi dan penerimaan mahasiswa yang transparan</li>
+                            <li>Layanan dan pembinaan mahasiswa yang memadai</li>
+                            <li>Pengembangan soft skills dan karakter mahasiswa</li>
+                            <li>Pembimbingan akademik yang efektif</li>
+                            <li>Evaluasi hasil belajar yang objektif</li>
+                        </ol>
+                        <h5>Indikator Kinerja:</h5>
+                        <ul>
+                            <li>Proses seleksi yang adil dan terbuka</li>
+                            <li>Ketersediaan layanan kemahasiswaan</li>
+                            <li>Program pengembangan karakter</li>
+                            <li>Kualitas pembimbingan akademik</li>
+                            <li>Sistem evaluasi belajar yang valid</li>
+                        </ul>
+                        <h5>Instrumen Pengukuran:</h5>
+                        <p>Dokumen seleksi, survei kepuasan mahasiswa, portofolio kegiatan, laporan pembimbingan, sistem evaluasi.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="standar3Modal" tabindex="-1" aria-labelledby="standar3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="standar3ModalLabel">Standar 3: Sumber Daya Manusia</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Kriteria Standar Sumber Daya Manusia:</h5>
+                        <ol>
+                            <li>Kualifikasi dan kompetensi dosen dan tenaga kependidikan</li>
+                            <li>Sistem rekrutmen dan pengembangan karir</li>
+                            <li>Kesejahteraan dan penghargaan</li>
+                            <li>Evaluasi kinerja yang berkelanjutan</li>
+                            <li>Pengembangan profesionalisme</li>
+                        </ol>
+                        <h5>Indikator Kinerja:</h5>
+                        <ul>
+                            <li>Kualifikasi akademik dosen</li>
+                            <li>Rasio dosen:mahasiswa</li>
+                            <li>Program pengembangan staf</li>
+                            <li>Sistem remunerasi</li>
+                            <li>Produktivitas penelitian dan pengabdian</li>
+                        </ul>
+                        <h5>Instrumen Pengukuran:</h5>
+                        <p>Dokumen kualifikasi, laporan kinerja, program pengembangan, sistem remunerasi, portofolio penelitian.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="standar4Modal" tabindex="-1" aria-labelledby="standar4ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="standar4ModalLabel">Standar 4: Keuangan, Sarana dan Prasarana</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Kriteria Standar Keuangan, Sarana dan Prasarana:</h5>
+                        <ol>
+                            <li>Perencanaan dan penganggaran yang efektif</li>
+                            <li>Pengelolaan keuangan yang akuntabel</li>
+                            <li>Ketersediaan sarana dan prasarana</li>
+                            <li>Pemeliharaan fasilitas</li>
+                            <li>Pemanfaatan teknologi informasi</li>
+                        </ol>
+                        <h5>Indikator Kinerja:</h5>
+                        <ul>
+                            <li>Sistem perencanaan anggaran</li>
+                            <li>Audit keuangan</li>
+                            <li>Ketersediaan ruang belajar</li>
+                            <li>Pemeliharaan fasilitas</li>
+                            <li>Infrastruktur TI</li>
+                        </ul>
+                        <h5>Instrumen Pengukuran:</h5>
+                        <p>Dokumen anggaran, laporan keuangan, inventaris sarpras, laporan pemeliharaan, infrastruktur TI.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galeri -->
+        <section id="galeri" class="galeri mb-5">
+            <h2 class="text-center mb-4 border-bottom pb-2"><i class="bi bi-images"></i> Galeri Kegiatan</h2>
+            <div class="row g-3">
+                <div class="col-md-4 col-6">
+                    <img src="images/galeri1.jpg" class="img-fluid rounded" alt="Kegiatan 1" data-bs-toggle="modal" data-bs-target="#galeri1Modal">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="images/galeri2.jpg" class="img-fluid rounded" alt="Kegiatan 2" data-bs-toggle="modal" data-bs-target="#galeri2Modal">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="images/galeri3.jpg" class="img-fluid rounded" alt="Kegiatan 3" data-bs-toggle="modal" data-bs-target="#galeri3Modal">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="images/galeri4.jpg" class="img-fluid rounded" alt="Kegiatan 4" data-bs-toggle="modal" data-bs-target="#galeri4Modal">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="images/galeri5.jpg" class="img-fluid rounded" alt="Kegiatan 5" data-bs-toggle="modal" data-bs-target="#galeri5Modal">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="images/galeri6.jpg" class="img-fluid rounded" alt="Kegiatan 6" data-bs-toggle="modal" data-bs-target="#galeri6Modal">
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeri Modals -->
+        <div class="modal fade" id="galeri1Modal" tabindex="-1" aria-labelledby="galeri1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="galeri1ModalLabel">Audit Bersama Tim KAP 2025</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/galeri1.jpg" class="img-fluid" alt="audit bersama tim KAP 2025">
+                        <p class="mt-3">BELUM ADA ISI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="galeri2Modal" tabindex="-1" aria-labelledby="galeri2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="galeri2ModalLabel">Audit Mutu Fakultas Syariah</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/galeri2.jpg" class="img-fluid" alt="Audit Mutu Fakultas Syariah">
+                        <p class="mt-3">Tim SPI melaksanakan audit mutu internal di Fakultas Syariah pada bulan Maret 2023 sebagai bagian dari program audit rutin tahunan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="galeri3Modal" tabindex="-1" aria-labelledby="galeri3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="galeri3ModalLabel">Workshop Standar Mutu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/galeri3.jpg" class="img-fluid" alt="Workshop Standar Mutu">
+                        <p class="mt-3">Workshop penyusunan standar mutu terbaru yang dilaksanakan pada bulan April 2023 melibatkan seluruh pimpinan fakultas dan unit kerja.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="galeri4Modal" tabindex="-1" aria-labelledby="galeri4ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="galeri4ModalLabel">Monitoring Evaluasi Program Studi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/galeri4.jpg" class="img-fluid" alt="Monitoring Evaluasi Program Studi">
+                        <p class="mt-3">Kegiatan monitoring dan evaluasi program studi baru yang dilaksanakan SPI pada bulan Mei 2023 untuk memastikan penerapan standar mutu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="galeri5Modal" tabindex="-1" aria-labelledby="galeri5ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="galeri5ModalLabel">Sosialisasi Sistem Penjaminan Mutu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/galeri5.jpg" class="img-fluid" alt="Sosialisasi Sistem Penjaminan Mutu">
+                        <p class="mt-3">Sosialisasi sistem penjaminan mutu internal kepada mahasiswa baru yang dilaksanakan pada bulan Agustus 2023.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="galeri6Modal" tabindex="-1" aria-labelledby="galeri6ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="galeri6ModalLabel">Rapat Koordinasi SPI</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/galeri6.jpg" class="img-fluid" alt="Rapat Koordinasi SPI">
+                        <p class="mt-3">Rapat koordinasi bulanan SPI UIN Bukittinggi untuk mengevaluasi program kerja dan menyusun rencana tindak lanjut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kontak -->
+        <section id="kontak" class="kontak mb-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-primary text-white">
+                            <h3><i class="bi bi-envelope"></i> Hubungi Kami</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nama" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="nama" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Alamat Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subjek" class="form-label">Subjek</label>
+                                    <input type="text" class="form-control" id="subjek" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pesan" class="form-label">Pesan</label>
+                                    <textarea class="form-control" id="pesan" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header bg-success text-white">
+                            <h3><i class="bi bi-map"></i> Lokasi Kami</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="ratio ratio-16x9 mb-3">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7960.09558472941!2d100.3702285!3d-0.3063174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd5388f4fb4f3a1%3A0x9e9a7e1e6b3f3b1a!2sUIN%20Syarif%20Makasar%20Datuk%20Di%20Raja%20Bukittinggi!5e0!3m2!1sen!2sid!4v1717459345678!5m2!1sen!2sid" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            <h5>Satuan Pengawasan Internal</h5>
+                            <p>UIN SMDD Bukittinggi<br>
+                            Jl. Gurun Aur No. 8, Bukittinggi<br>
+                            Sumatera Barat, Indonesia 26136</p>
+                            <p><i class="bi bi-telephone"></i> (0752) 12345<br>
+                            <i class="bi bi-envelope"></i> spi@uinbukittinggi.ac.id</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bg text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Tentang SPI UIN Bukittinggi</h5>
+                    <p>Sistem Pengawasan Internal (SPI) merupakan bagian integral dari  Satuan Pengawasan Internal pendidikan tinggi di UIN Bukittinggi.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Kontak Kami</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt"></i> Jl. Gurun Aur No. 8, Bukittinggi, Sumatera Barat</li>
+                        <li><i class="bi bi-telephone"></i> (0752) 12345</li>
+                        <li><i class="bi bi-envelope"></i> spi@uinbukittinggi.ac.id</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://uinbukittinggi.ac.id" class="text-white">UIN Bukittinggi</a></li>
+                        <li><a href="https://lppm.uinbukittinggi.ac.id/" class="text-white">LP2M</a></li>
+                        <li><a href="https://lpm.uinbukittinggi.ac.id/" class="text-white">LPM</a></li>
+                        <li><a href="https://p2b.uinbukittinggi.ac.id/?m=1" class="text-white">PPB</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 SPI UIN SMDD Bukittinggi.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook fs-5"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter fs-5"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram fs-5"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-youtube fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Highlight active navigation link
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle navigation link clicks
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Remove active class from all links
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // If it's a dropdown item, also activate its parent
+                    if (this.classList.contains('dropdown-item')) {
+                        const dropdownToggle = document.querySelector('.nav-link.dropdown-toggle');
+                        if (dropdownToggle) {
+                            dropdownToggle.classList.add('active');
+                        }
+                    }
+                });
+            });
+            
+            // Simple search functionality
+            const searchForm = document.querySelector('.d-flex');
+            if (searchForm) {
+                searchForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const searchTerm = this.querySelector('input').value.toLowerCase();
+                    alert('Fitur pencarian akan mencari: ' + searchTerm);
+                    // In a real implementation, this would redirect to search results
+                });
+            }
+            
+            // Show modal for berita links
+            const beritaLinks = document.querySelectorAll('a[href^="#berita"]');
+            beritaLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = this.getAttribute('href').replace('#', '') + 'Modal';
+                    const modal = new bootstrap.Modal(document.getElementById(target));
+                    modal.show();
+                });
+            });
+        });
+        
+    </script>
+</body>
+</html>
